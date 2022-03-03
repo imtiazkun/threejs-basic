@@ -1,4 +1,4 @@
-# threejs-basic
+# Introduction to ThreeJS
 
 A basic threejs example
 
