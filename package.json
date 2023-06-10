@@ -2,16 +2,20 @@
   "name": "threejs-basic",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://imtiazkun.github.io/threejs-basic/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "three": "^0.153.0"
   }
 }

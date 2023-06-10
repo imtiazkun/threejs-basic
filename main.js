@@ -22,8 +22,9 @@ camera.position.z = 3
 scene.add(camera)
 
 // Renderer
+const canvas = document.querySelector('canvas.webgl');
 const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('canvas.webgl')
+    canvas: canvas
 })
 
 
@@ -50,6 +51,7 @@ window.addEventListener('resize', () =>
 
 window.addEventListener('dblclick', () =>
 {
+    console.log("double click");
     const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement
 
     if(!fullscreenElement)
